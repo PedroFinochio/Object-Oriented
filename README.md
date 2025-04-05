@@ -1,45 +1,46 @@
 # 🏆 Programação Orientada a Objetos com Java  
 
-📌 Repositório criado para acompanhar os estudos de **Programação Orientada a Objetos (POO) com Java**.  
-Aqui você encontrará **teoria, exercícios práticos e projetos**, todos estruturados para um aprendizado progressivo.  
+📌 Bem-vindo ao repositório de **Programação Orientada a Objetos (POO) com Java**!  
+Aqui você encontrará **teoria, exercícios práticos e projetos** para reforçar seu aprendizado de maneira progressiva.  
 
 ---
 
 ## 📖 O que é Programação Orientada a Objetos?  
 
-A **Programação Orientada a Objetos (POO)** é um paradigma de programação que organiza o código em **objetos**, que representam entidades do mundo real.  
+A **Programação Orientada a Objetos (POO)** é um paradigma de programação que estrutura o código em **objetos**, que representam entidades do mundo real.  
 
-### ✨ **Principais conceitos da POO:**  
-- 🔹 **Classe**: Define a estrutura de um objeto.  
-- 🔹 **Objeto**: Instância de uma classe, representando um item do mundo real.  
-- 🔹 **Encapsulamento**: Controle de acesso aos dados do objeto.  
-- 🔹 **Herança**: Reutilização de código através de uma hierarquia de classes.  
-- 🔹 **Polimorfismo**: Permite que um mesmo método tenha diferentes comportamentos.  
-
----
-
-## ☕ Por que usar Java para Programação Orientada a Objetos?  
-
-O Java é **totalmente orientado a objetos**, ou seja, **tudo em Java é um objeto**. Além disso:  
-
-✅ **Multiplataforma**: roda em qualquer sistema com JVM.  
-✅ **Amplamente utilizado**: grandes empresas utilizam Java para sistemas robustos.  
-✅ **Rico ecossistema**: possui diversas bibliotecas e frameworks úteis.  
-✅ **Ferramentas poderosas**: como **Maven**, que facilita a construção de projetos.  
+### 🔹 **Principais conceitos da POO:**  
+✅ **Classe** → Define a estrutura de um objeto.  
+✅ **Objeto** → Instância de uma classe, representando um item do mundo real.  
+✅ **Encapsulamento** → Protege os dados e restringe acessos diretos.  
+✅ **Herança** → Permite reutilizar código através de hierarquia de classes.  
+✅ **Polimorfismo** → Permite que métodos tenham diferentes comportamentos.  
 
 ---
 
-## ⚙ Como Compilar e Executar os Projetos?  
+## ☕ Por que usar Java para POO?  
 
-Todos os **projetos e exercícios** deste repositório utilizam **Maven** para gerenciamento de dependências e compilação.  
+O **Java** é uma linguagem **totalmente orientada a objetos**, e isso traz várias vantagens:  
 
-### ✅ **Requisitos**  
+✅ **Multiplataforma** → Código Java pode rodar em qualquer sistema operacional com **JVM**.  
+✅ **Ampla adoção** → Grandes empresas usam Java para sistemas robustos e escaláveis.  
+✅ **Ecossistema rico** → Diversas bibliotecas e frameworks poderosos.  
+✅ **Ferramentas eficientes** → Como **Maven**, que facilita o gerenciamento de dependências.  
+
+---
+
+## ⚙ Como Executar os Projetos?  
+
+Todos os exercícios e projetos deste repositório utilizam **Maven** para compilação e execução.  
+
+### 🛠 **Pré-requisitos**  
 Antes de começar, instale:  
-- **Java 21** ou superior → [Download](https://adoptium.net/)  
-- **Apache Maven** → [Download](https://maven.apache.org/download.cgi)  
+🔹 **Java 21** ou superior → [Download](https://adoptium.net/)  
+🔹 **Apache Maven** → [Download](https://maven.apache.org/download.cgi)  
 
-### 🚀 **Executando um Projeto**  
-1️⃣ Navegue até a pasta do projeto:  
+### 🚀 **Passos para rodar um projeto**  
+
+1️⃣ Acesse o diretório do projeto:  
    ```bash
    cd caminho/do/projeto
 
@@ -53,18 +54,27 @@ mvn exec:java -Dexec.mainClass="com.seuprojeto.Main"
 
 💡 Como Contribuir?
 
-Quer sugerir melhorias ou adicionar novos exercícios? Siga os passos:
+Quer sugerir melhorias ou adicionar novos exercícios? Siga os passos abaixo:
 
-1️⃣ Fork este repositório.
+1️⃣ Faça um Fork deste repositório.
 2️⃣ Crie uma branch para suas alterações:
 
 git checkout -b minha-mudanca
 
-3️⃣ Faça suas modificações e envie um Pull Request.
+3️⃣ Realize suas alterações e faça um commit:
+
+git commit -m "Descrição das mudanças"
+
+4️⃣ Envie as alterações para o GitHub:
+
+git push origin minha-mudanca
+
+5️⃣ Abra um Pull Request no repositório original.
 📚 Recursos Adicionais
 
 📌 Documentação Oficial do Java
-📌 Aprenda Maven do zero
+📌 Curso de Java - Rodrigo Pagliares
+📌 Tutorial de Maven
 📜 Licença
 
-Este repositório é licenciado sob a MIT License – fique à vontade para usar e contribuir! 🚀
+Este repositório é licenciado sob a MIT License – sinta-se à vontade para usar e contribuir! 🚀
