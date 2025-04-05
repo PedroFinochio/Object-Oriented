@@ -34,18 +34,30 @@ Os projetos utilizam **Maven** para compilação e execução.
 🔹 [Java 21+](https://adoptium.net/)  
 🔹 [Apache Maven](https://maven.apache.org/download.cgi)  
 
-### 🚀 **Passos**  
+### 🚀 **Passos para executar**  
 
-```bash
-cd caminho/do/projeto
+1. **Abra o terminal e navegue até a pasta do projeto:**  
+   ```bash
+   cd caminho/do/projeto
+
+    Compile o código:
+
 mvn clean compile
-mvn exec:java -Dexec.mainClass="com.seuprojeto.Main"
+
+Execute a aplicação:
+
+    mvn exec:java -Dexec.mainClass="com.seuprojeto.Main"
 
 📚 Recursos
 
-📌 Documentação Java
-📌 Curso de Java - Rodrigo Pagliares
-📌 Tutorial de Maven
+📖 Documentação Oficial do Java
+🔗 Acesse aqui
+
+🎥 Curso de Java - Rodrigo Pagliares
+🔗 Assista no YouTube
+
+📘 Guia do Maven
+🔗 Leia mais
 📜 Licença
 
 Licenciado sob a MIT License – contribuições são bem-vindas! 🚀
