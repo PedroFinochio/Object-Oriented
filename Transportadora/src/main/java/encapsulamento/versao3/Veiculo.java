@@ -16,21 +16,24 @@ public class Veiculo {
         return cargaMaxima;
     }
 
-    public boolean adicionarCaixa(double peso){
-        if(this.carga + peso <= cargaMaxima) {
-            this.carga += peso;
+    public boolean adicionarCaixa(double pesoKg){
+        double pesoN = quilosParaNewtons(pesoKg);
+        if(this.carga + pesoN <= cargaMaxima && pesoN >= 0) {
+            this.carga += pesoN;
             return true;
         }
        return false;
     }
 
-    private double newtonsParaQuilos(double peso){
-        peso = peso * 9.8;
-        return peso;
+    private double newtonsParaQuilos(double pesoN){
+        return pesoN / 9.8;
     }
 
-    private double quilosParaNewtons(double peso){
-        peso = 9.8 * newtonsParaQuilos(peso);
-        return peso;
+    private double quilosParaNewtons(double pesoKg){
+        return pesoKg * 9.8;
     }
+    public double getCargaKg() {
+        return newtonsParaQuilos(this.carga);
+    }
+
 }
