@@ -1,0 +1,146 @@
+Objeto: entidade que representa algo do mundo real dentro do programa.
+
+Atributo: Características do objeto (representam o estado atual do objeto).
+
+Método: Ações que o objeto pode realizar (definem como o objeto se comporta ou o que ele pode fazer).
+
+Instanciar: criar um objeto a partir de uma classe.
+
+Classe: define os atributos e métodos comuns que serão compartilhados por um objeto (modelo para criar objetos).
+
+Abstração: esconder detalhes complexos e mostrar apenas o que é essencial.
+
+this: palavra-chave especial que é usada para se referir ao próprio objeto dentro de uma classe.
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Visibilidade de um objeto
+
+. Modificadores de visibilidade: indicam o nível de acesso aos componentes internos de uma classe:
+    1. public: a classe atual e todas as outras classes podem acessar.
+    2. private: somente a classe atual pode acessar.
+    3. protected: a classe atual e todas as suas sub-classes podem acessar.
+    4. package-friendly: pode ser acessado por qualquer outra classe que esteja no mesmo pacote, mas não pode ser acessado
+        por classes de outros pacotes.
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Métodos especiais
+
+1. getter: funções usadas para acessar atributos privados de uma classe.
+2. setter: funções usadas para modificar o valor de um atributo de uma classe.
+3. construct: usadas para criar e inicializar objetos de uma classe (o construtor permite definir valores iniciais para
+    seus atributos de forma automática, sem precisar chamar vários setters depois).
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Pacotes e Import
+
+. Pacotes: pastas organizadoras de classes. Elas ajudam a manter o projeto limpo, organizado e mais fácil de manter,
+perimitindo o reuso do código.
+
+. Vantagens do uso de pacotes:
+    1. Organização do código.
+    2. Evita conflitos de nome sde classes iguais.
+    3. Reutilização do código.
+    4. Facilita a manutenção e entendimento do projeto.
+
+. Importar: indica ao compilador a localização das classes do pacote.
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Criação de objetos com o operador new
+
+. New: operador usado para instanciar objetos em Java, ele cria um espaço na memória para o objeto e chama o construtor
+    da classe.
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Sintaxe de um arquivo fonte em Java
+
+. Sintaxe de um pacote: package nomeDoPacote[.subpacote];
+    Ex: package br.com.meuprojeto.modelo;
+
+. Sintaxe do import: import nomeDoPacote[.subpacote].NomeClasse;
+                    import nomeDoPacote[.subpacote].*;  // Importa todas as classes do pacote
+    Ex: import java.util.Scanner;
+        import java.util.*;
+
+. Sintaxe de uma classe: <modificador_acesso> class NomeClasse {
+                             // corpo da classe
+                         }
+    Ex: public class Hospede {
+            // corpo da classe
+        }
+
+. Sintaxe do construtor: <modificador_acesso> NomeClasse([parâmetros]) {
+                             // corpo do construtor
+                         }
+    Ex: public Hospede(String nome) {
+            this.nome = nome;
+        }
+
+. Sintaxe do método: <modificador_acesso> tipoRetorno nomeMetodo([parâmetros]) {
+                         // corpo do método
+                     }
+    Ex: public void exibirDados() {
+            System.out.println("Nome: " + nome);
+        }
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Tipos primitivos e tipos de referencia
+
+. Tipos primitivos:
+    -> Inteiros: byte (8 bits), short (16 bits), int (32 bits) e long (64 bits).
+    -> Pontos flutuantes: float (32 bits) e double (64 bits).
+    -> Character: char.
+    -> Boolean: bool.
+
+. Tipos de referência: variáveis que armazenam endereços para objetos criados na memória Heap.
+    -> String, arrays, classes, etc.
+    -> Ao contrários dos tipos primitivos, possuem métodos.
+
+. Vantagens de tipos de referência:
+    1. Métodos prontos para usar (lenght(), por exemplo).
+    2. Reutilização de código.
+
+. Desvantagens de tipos de referência:
+    1. Baixa performance (acesso via referência, não direto).
+    2. Consumo de memória grande.
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Convenções de nomenclatura em Java
+
+. Java é case sensitive: distingue letras maiúsculas de minúsculas.
+
+. Classes:
+    -> iniciam com letra maiúscula.
+    -> devem ser substantivos.
+    -> CamelCase para nomes compostos (primeira letra de cada palavra em maiúsculo).
+
+. Métodos:
+    -> primeira letra minúscula.
+    -> devem ser verbos.
+    -> CamelCase para palavras compostas.
+
+. Variáveis:
+    -> primeira letra minúscula.
+    -> podem ser substantivos.
+    -> CamelCase para palavras compostas.
+
+. Pacotes:
+    -> sempre em letras minúsculas.
+    -> nome hierárquico, separados por pontos.
+    -> Convenção: usar domínio invertido da empresa seguido pelo projeto/módulo
+
+. Constantes:
+    -> todas as letras em maiúsculo.
+    -> palavras separadas por _
+    -> usadas com final (variáveis imutáveis).
+
+
+
+
+
+
+
+
+
+
+
+
