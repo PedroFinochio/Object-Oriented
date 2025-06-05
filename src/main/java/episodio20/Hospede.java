@@ -1,9 +1,16 @@
-package episodio1.episodio5;
+package episodio20;
 
 public class Hospede {
 
     private String nome;
     private String sobrenome;
+
+    public Hospede() {
+    }
+
+    public Hospede(String nome){
+        this.nome = nome;
+    }
 
     public String getNome() {
         return nome;
